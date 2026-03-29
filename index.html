@@ -55,7 +55,8 @@ text-shadow:0 0 7px #fff,0 0 21px var(–cyan),0 0 42px var(–cyan);
 .badge{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(180,0,255,0.1);border:1px solid rgba(180,0,255,0.3);color:#d080ff;padding:0.4rem 1.1rem;border-radius:100px;font-size:0.78rem;font-weight:500;margin-bottom:2rem;animation:fu 0.5s ease both;}
 .dot{width:6px;height:6px;background:var(–cyan);border-radius:50%;animation:blink 2s infinite;}
 @keyframes blink{0%,100%{opacity:1;}50%{opacity:0.2;}}
-.hero h1{font-size:clamp(3rem,7vw,6rem);font-weight:800;line-height:1.04;letter-spacing:-0.03em;max-width:900px;margin-bottom:1.5rem;animation:fu 0.5s 0.1s ease both;}
+.hero h1{font-size:clamp(2.2rem,5.2vw,4.8rem);font-weight:800;line-height:1.08;letter-spacing:-0.03em;margin-bottom:1.5rem;animation:fu 0.5s 0.1s ease both;white-space:nowrap;}
+@media(max-width:768px){.hero h1{white-space:normal;max-width:95vw;}}
 .grad{background:linear-gradient(135deg,var(–purple),var(–cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .grad2{background:linear-gradient(135deg,var(–pink),var(–blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .hero p{font-size:1.15rem;color:var(–muted);max-width:580px;line-height:1.75;margin-bottom:2.5rem;animation:fu 0.5s 0.2s ease both;}
