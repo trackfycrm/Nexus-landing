@@ -8,16 +8,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#030014;
-  --dark:#0a0025;
-  --card:rgba(10,0,40,0.75);
-  --border:rgba(180,0,255,0.25);
-  --purple:#b400ff;
-  --blue:#0096ff;
-  --cyan:#00cfff;
-  --pink:#ff00c8;
-  --text:#e4e4f0;
-  --muted:#64648a;
+  --bg:#0F172A;
+  --dark:#020617;
+  --card:rgba(15,23,42,0.7);
+  --border:rgba(148,163,184,0.2);
+  --primary:#2563EB;
+  --secondary:#7C3AED;
+  --accent:#22C55E;
+  --text:#E2E8F0;
+  --muted:#94A3B8;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -33,16 +32,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 3rem;display:
 .logo{font-size:1.4rem;font-weight:800;letter-spacing:0.06em;}
 .logo .nx{
 color:#fff;
-text-shadow:0 0 7px #fff,0 0 21px #fff,0 0 42px var(--purple),0 0 82px var(--purple);
-animation:neon 3s infinite alternate;
+text-shadow:0 2px 8px rgba(255,255,255,0.15);
 }
 .logo .crm{
-color:var(--cyan);
-text-shadow:0 0 7px #fff,0 0 21px var(--cyan),0 0 42px var(--cyan);
-}
-@keyframes neon{
-0%,19%,21%,23%,25%,54%,56%,100%{text-shadow:0 0 7px #fff,0 0 21px #fff,0 0 42px var(--purple),0 0 82px var(--purple);}
-20%,24%,55%{text-shadow:none;}
+color:var(--primary);
 }
 .nav-links{display:flex;gap:2rem;list-style:none;}
 .nav-links a{color:var(--muted);text-decoration:none;font-size:0.9rem;transition:color 0.2s;}
