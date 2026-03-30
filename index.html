@@ -24,8 +24,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);ove
 h1,h2,h3,.logo{font-family:'Syne',sans-serif;}
 
 /* CANVAS */
-#neural{position:fixed;inset:0;z-index:0;}
-.overlay{position:fixed;inset:0;z-index:1;background:radial-gradient(ellipse at center,transparent 20%,rgba(3,0,20,0.75) 100%);}
+#neural{position:fixed;inset:0;z-index:0;filter:blur(1.5px) brightness(0.8);}
+.overlay{position:fixed;inset:0;z-index:1;background:radial-gradient(ellipse at center,rgba(3,0,20,0.6) 10%,rgba(3,0,20,0.92) 100%);}
 
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 3rem;display:flex;align-items:center;justify-content:space-between;background:rgba(3,0,20,0.85);backdrop-filter:blur(24px);border-bottom:1px solid var(--border);}
@@ -464,7 +464,10 @@ const ctx = canvas.getContext('2d')
 let W, H, nodes, animId
 
 const COLORS = [
-  [180,0,255],[0,150,255],[255,0,200],[0,207,255],[255,100,0]
+  [99,102,241],   // azul suave
+  [59,130,246],
+  [139,92,246],
+  [56,189,248]
 ]
 function randColor(){return COLORS[Math.floor(Math.random()*COLORS.length)]}
 
