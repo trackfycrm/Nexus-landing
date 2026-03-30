@@ -71,7 +71,7 @@ color:var(--primary);
 
 /* FEATURES */
 .feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;margin-top:3rem;}
-.fc{background:var(--card);backdrop-filter:blur(12px);border:1px solid var(--border);border-radius:18px;padding:2rem;transition:all 0.3s;position:relative;overflow:hidden;}
+.fc{background:rgba(255,255,255,0.02);border:1px solid rgba(148,163,184,0.15);box-shadow:0 10px 30px rgba(0,0,0,0.25);border-radius:18px;padding:2rem;transition:all 0.3s;position:relative;overflow:hidden;}
 .fc::after{content:’’;position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--purple),var(--cyan));opacity:0;transition:opacity 0.3s;}
 .fc:hover{border-color:rgba(180,0,255,0.4);transform:translateY(-5px);box-shadow:0 0 30px rgba(180,0,255,0.1);}
 .fc:hover::after{opacity:1;}
@@ -82,7 +82,7 @@ color:var(--primary);
 
 /* AGENTES */
 .agents-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:3rem;}
-.agent-card{background:var(--card);backdrop-filter:blur(12px);border:1px solid var(--border);border-radius:20px;padding:2rem;position:relative;overflow:hidden;transition:all 0.3s;}
+.agent-card{background:rgba(255,255,255,0.02);border:1px solid rgba(148,163,184,0.15);box-shadow:0 10px 30px rgba(0,0,0,0.25);border-radius:20px;padding:2rem;position:relative;overflow:hidden;transition:all 0.3s;}
 .agent-card:hover{transform:translateY(-4px);box-shadow:0 0 40px rgba(180,0,255,0.12);}
 .agent-icon{width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1rem;}
 .ag1{background:linear-gradient(135deg,rgba(180,0,255,0.3),rgba(180,0,255,0.1));box-shadow:0 0 20px rgba(180,0,255,0.2);}
@@ -104,7 +104,7 @@ color:var(--primary);
 
 /* PRICING */
 .price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:3rem;}
-.pc{background:var(--card);backdrop-filter:blur(12px);border:1px solid var(--border);border-radius:22px;padding:2.5rem;position:relative;transition:transform 0.3s;}
+.pc{background:rgba(255,255,255,0.02);border:1px solid rgba(148,163,184,0.15);box-shadow:0 10px 30px rgba(0,0,0,0.25);border-radius:22px;padding:2.5rem;position:relative;transition:transform 0.3s;}
 .pc:hover{transform:translateY(-5px);}
 .pc.pop{border-color:rgba(180,0,255,0.5);box-shadow:0 0 40px rgba(180,0,255,0.1);}
 .pop-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--purple),var(--blue));color:#fff;font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:0.3rem 1rem;border-radius:100px;font-family:‘Syne’,sans-serif;}
